@@ -1,0 +1,156 @@
+인터넷 연결 STRING
+
+http://schemas.android.com/apk/res/android
+http://www.google.com
+https://play.google.com/store/apps/details?id=
+https://plus.google.com/
+https://www.googleapis.com/auth/appstate
+https://www.googleapis.com/auth/datastoremobile
+https://www.googleapis.com/auth/drive
+https://www.googleapis.com/auth/drive.appdata
+https://www.googleapis.com/auth/drive.apps
+https://www.googleapis.com/auth/drive.file
+https://www.googleapis.com/auth/fitness.activity.read
+https://www.googleapis.com/auth/fitness.activity.write
+https://www.googleapis.com/auth/fitness.blood_glucose.read
+https://www.googleapis.com/auth/fitness.blood_glucose.write
+https://www.googleapis.com/auth/fitness.blood_pressure.read
+https://www.googleapis.com/auth/fitness.blood_pressure.write
+https://www.googleapis.com/auth/fitness.body.read
+https://www.googleapis.com/auth/fitness.body.write
+https://www.googleapis.com/auth/fitness.body_temperature.read
+https://www.googleapis.com/auth/fitness.body_temperature.write
+https://www.googleapis.com/auth/fitness.location.read
+https://www.googleapis.com/auth/fitness.location.write
+https://www.googleapis.com/auth/fitness.nutrition.read
+https://www.googleapis.com/auth/fitness.nutrition.write
+https://www.googleapis.com/auth/fitness.oxygen_saturation.read
+https://www.googleapis.com/auth/fitness.oxygen_saturation.write
+https://www.googleapis.com/auth/fitness.reproductive_health.read
+https://www.googleapis.com/auth/fitness.reproductive_health.write
+https://www.googleapis.com/auth/games
+https://www.googleapis.com/auth/games.firstparty
+https://www.googleapis.com/auth/games_lite
+https://www.googleapis.com/auth/plus.login
+https://www.googleapis.com/auth/plus.me
+
+
+권한 제어 및 활동
+
+android.intent.category.LAUNCHER
+kr.go.mnd.mmsa.activity.ActivityIntro -
+
+android.intent.category.DEFAULT
+kr.go.mnd.mmsa.activity.ActivityNFC
+kr.go.mnd.mmsa.activity.DrawerFrameActivityMain
+kr.go.mnd.mmsa.br.BroadcastReceiverSystem
+
+android.intent.category.BROWSABLE
+kr.go.mnd.mmsa.activity.DrawerFrameActivityMain
+
+
+
+------------------------------
+android.intent.action.MAIN
+kr.go.mnd.mmsa.activity.ActivityIntro
+
+android.nfc.action.TECH_DISCOVERED
+kr.go.mnd.mmsa.activity.ActivityNFC
+
+android.nfc.action.NDEF_DISCOVERED
+kr.go.mnd.mmsa.activity.ActivityNFC
+
+android.intent.action.VIEW
+kr.go.mnd.mmsa.activity.DrawerFrameActivityMain
+
+android.intent.action.SEND
+kr.go.mnd.mmsa.activity.DrawerFrameActivityMain
+
+com.markany.aegis.AEGIS_ACTION_ADMIN_REQUEST
+kr.go.mnd.mmsa.br.BroadcastReceiverExternal
+
+android.app.action.DEVICE_ADMIN_ENABLED
+kr.go.mnd.mmsa.br.BroadcastReceiverGDA_LG
+
+com.markany.aegis.vt.MSTICKER_POLICY_SERVICE
+kr.go.mnd.mmsa.br.BroadcastReceiverRestartAegisSAFER
+
+android.intent.action.BOOT_COMPLETED
+kr.go.mnd.mmsa.br.BroadcastReceiverSystem
+
+android.intent.action.ACTION_SHUTDOWN
+kr.go.mnd.mmsa.br.BroadcastReceiverSystem
+
+android.intent.action.MEDIA_MOUNTED
+kr.go.mnd.mmsa.br.BroadcastReceiverSystem
+
+android.accessibilityservice.AccessibilityService
+kr.go.mnd.mmsa.accessibility.ServiceAccessibility
+
+------------------------
+
+Activities
+kr.go.mnd.mmsa.activity.ActivityCheckOutSMS
+kr.go.mnd.mmsa.activity.ActivityCheckOutGPS
+kr.go.mnd.mmsa.activity.ActivityUserCheck
+kr.go.mnd.mmsa.activity.ActivityIntro
+kr.go.mnd.mmsa.activity.DrawerFrameActivityMain
+kr.go.mnd.mmsa.activity.ActivityPermission
+kr.go.mnd.mmsa.activity.ActivityUserGuide
+kr.go.mnd.mmsa.activity.ActivityFixConfig
+kr.go.mnd.mmsa.activity.ActivityLog
+kr.go.mnd.mmsa.activity.ActivityBeacon
+kr.go.mnd.mmsa.activity.ActivityNFC
+kr.go.mnd.mmsa.activity.ActivityPermissionAgree
+kr.go.mnd.mmsa.activity.ActivityGoogleMapMarker
+kr.go.mnd.mmsa.accessibility.ActivityAccessibilityDesc
+com.google.android.gms.common.api.GoogleApiActivity
+Services
+kr.go.mnd.mmsa.service.ServiceAEGIS
+kr.go.mnd.mmsa.service.ServicePolicy
+kr.go.mnd.mmsa.service.ServicePolicyMFSS
+kr.go.mnd.mmsa.service.ServicePolicyMFLG
+kr.go.mnd.mmsa.service.ServiceAlert
+kr.go.mnd.mmsa.libadc.ServiceDeviceAdmin
+kr.go.mnd.mmsa.libadc.ServiceLocation
+kr.go.mnd.mmsa.accessibility.ServiceAccessibility
+Receivers
+kr.go.mnd.mmsa.br.BroadcastReceiverExternal
+kr.go.mnd.mmsa.br.BroadcastReceiverGDA_LG
+kr.go.mnd.mmsa.br.BroadcastReceiverSystem
+kr.go.mnd.mmsa.br.BroadcastReceiverRestartAegisSAFER
+Providers
+=---------------------------------------
+Permissions
+ android.permission.ACCESS_COARSE_LOCATION
+ android.permission.ACCESS_FINE_LOCATION
+ android.permission.BLUETOOTH
+ android.permission.BLUETOOTH_ADMIN
+ android.permission.CHANGE_WIFI_STATE
+ android.permission.INTERNET
+ android.permission.NFC
+ android.permission.WRITE_EXTERNAL_STORAGE
+ android.permission.ACCESS_NETWORK_STATE
+ android.permission.ACCESS_WIFI_STATE
+ android.permission.FOREGROUND_SERVICE
+ android.permission.READ_EXTERNAL_STORAGE
+ android.permission.RECEIVE_BOOT_COMPLETED
+ android.permission.REQUEST_DELETE_PACKAGES
+ android.permission.VIBRATE
+ android.permission.sec.ENTERPRISE_DEVICE_ADMIN
+ android.permission.sec.MDM_APP_MGMT
+ android.permission.sec.MDM_DATE_TIME
+ android.permission.sec.MDM_HW_CONTROL
+ android.permission.sec.MDM_LOCATION
+ android.permission.sec.MDM_MULTI_USER_MGMT
+ android.permission.sec.MDM_RESTRICTION
+ com.example.supportlibclient.SUPPORT_PERMISSION
+ com.samsung.android.knox.permission.KNOX_APP_MGMT
+ com.samsung.android.knox.permission.KNOX_DATE_TIME
+ com.samsung.android.knox.permission.KNOX_ENTERPRISE_DEVICE_ADMIN
+ com.samsung.android.knox.permission.KNOX_HW_CONTROL
+ com.samsung.android.knox.permission.KNOX_LOCATION
+ com.samsung.android.knox.permission.KNOX_MULTI_USER_MGMT
+ com.samsung.android.knox.permission.KNOX_RESTRICTION_MGMT
+
+
